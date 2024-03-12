@@ -1,1 +1,1 @@
-npm run be-format
+npm run backend && npm run frontend

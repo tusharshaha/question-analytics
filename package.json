@@ -2,7 +2,8 @@
   "scripts": {
     "server": "npm run start-dev --prefix backend",
     "client": "npm run dev --prefix frontend",
-    "be-format": "npm run format --prefix backend",
+    "frontend": "npm run format --prefix frontend",
+    "backend": "npm run format --prefix backend",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "prepare": "husky install"
   },
