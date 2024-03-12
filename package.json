@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "server": "npm run start-dev --prefix backend",
+    "client": "npm run dev --prefix frontend",
+    "be-format": "npm run format --prefix backend",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "devDependencies": {
+    "husky": "^9.0.11"
+  }
+}
