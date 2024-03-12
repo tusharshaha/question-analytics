@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+import mongoose from 'mongoose';
 
 const questionSchema = new mongoose.Schema(
   {
@@ -12,13 +12,13 @@ const questionSchema = new mongoose.Schema(
     isHidden: Boolean,
     analysis: String,
     imgList: [String],
-    otherOptions: [String],
+    otherOptions: [String]
   },
   {
-    timestamps: true,
+    timestamps: true
   }
 );
 
-const Question = mongoose.model("Question", questionSchema);
+const Question = mongoose.model('Question', questionSchema);
 
 export default Question;

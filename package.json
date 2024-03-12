@@ -4,7 +4,7 @@
     "client": "npm run dev --prefix frontend",
     "be-format": "npm run format --prefix backend",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "prepare": "husky"
+    "prepare": "husky install"
   },
   "dependencies": {
     "concurrently": "^8.2.2"

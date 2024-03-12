@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+import mongoose from 'mongoose';
 
 const answerSchema = new mongoose.Schema({
   submissionId: Number,
@@ -6,9 +6,9 @@ const answerSchema = new mongoose.Schema({
   answer: String,
   other: Boolean,
   otherField: String,
-  survey: String,
+  survey: String
 });
 
-const Answer = mongoose.model("Answer", answerSchema);
+const Answer = mongoose.model('Answer', answerSchema);
 
 export default Answer;
