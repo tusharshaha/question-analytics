@@ -3,6 +3,9 @@ import cors from 'cors';
 import dbConnect from './db/dbConnect.mjs';
 import dotenv from 'dotenv';
 
+// routes imports 
+import answerRoute from './routes/answer.route.mjs'
+
 dotenv.config();
 const port = process.env.PORT || 5000;
 const app = express();
@@ -21,8 +24,7 @@ app.use(express.json());
 dbConnect();
 
 // routes
-// app.use("/questions", orderRoute);
-// app.use("/answer", placeRoute);
+app.use("/api/analytics", answerRoute);
 
 app.get('/', (req, res) => {
   res.send('server hiting');
