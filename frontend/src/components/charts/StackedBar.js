@@ -38,8 +38,8 @@ const StackedBarChart = ({ data }) => {
           },
           elements: {
             rectangle: {
-              borderWidth: 1, 
-              borderSkipped: false, 
+              borderWidth: 1,
+              borderSkipped: false,
               borderRadius: {
                 topLeft: 10,
                 topRight: 10,
